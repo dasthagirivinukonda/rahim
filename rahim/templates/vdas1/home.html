@@ -1,0 +1,5 @@
+<h1> This is homepage</h1><hr>
+{%for obj in resp %}
+<a href="{%url "detail" obj.id %}"><h4>{{obj.name}}<h4></a>
+{%endfor%}
+<hr>

@@ -1,0 +1,23 @@
+{%extends "vdas/base.html"%}
+{%block content %}
+
+
+<h1> hi dastha  homepage</h1>
+
+
+<ul>
+
+  <li>{{anything.name}}</li>
+    <li>{{object.age}}</li>
+      <li>{{object.roolno}}</li>
+
+                  <li>{{object.branch}}</li>
+</ul>
+
+<hr>
+
+
+
+<a href="{%url "delete" anything.id %}"> DELETE</a>|
+<a href="{%url "edit" anything.id %}"> EDIT</a>
+{%endblock%}

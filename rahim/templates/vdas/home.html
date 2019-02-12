@@ -1,0 +1,8 @@
+<h1> hi dastha  homepage</h1>
+
+<a align="right" href="{%url "create" %}"> CREATE</a>
+<ul>
+  {% for Employee in object_list %}
+<a href="{%url "detail" Employee.id %} "> <h2><li>{{Employee.name}}</li></h2>  </a>
+</ul>
+{%endfor%}
